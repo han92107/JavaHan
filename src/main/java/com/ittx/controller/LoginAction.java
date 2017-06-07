@@ -5,15 +5,21 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.ittx.model.Operator;
 import com.ittx.service.intf.DishService;
+import com.ittx.service.intf.OperatorService;
 
 @Controller
 public class LoginAction{
 	@Autowired
-	private DishService dishService;
+	private OperatorService operatorService;
 	
 	@RequestMapping(value="/logins",method=RequestMethod.POST)
 	public void loginAction(String username,String password){
-		System.out.println(username+"sssssssss"+password);
+		Operator operator = new Operator();
+		operator.setUsername(username);
+		operator.setPassword(password);
+		boolean flag = operatorService.getLogin(operator);
+		System.out.println(flag);
 	}
 }

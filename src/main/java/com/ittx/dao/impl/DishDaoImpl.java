@@ -2,26 +2,14 @@ package com.ittx.dao.impl;
 
 import java.util.List;
 
-import javax.annotation.Resource;
-
-import org.hibernate.SessionFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.orm.hibernate4.support.HibernateDaoSupport;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.ittx.dao.intf.DishDao;
 import com.ittx.model.Dish;
 import com.ittx.model.DishCategory;
 
 @Repository("dishDao")
-public class DishDaoImpl extends HibernateDaoSupport implements DishDao {
-	
-	//给HibernateDaoSupport注入sessionFactory
-	@Resource(name="sessionFactory")
-	public void zhuru(SessionFactory sessionFactory){
-		super.setSessionFactory(sessionFactory);
-	}
+public class DishDaoImpl extends MyHibernateDaoSupport implements DishDao {
 	
 	@Override
 	public void add(DishCategory dishCategory) {
