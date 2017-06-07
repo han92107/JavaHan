@@ -1,0 +1,53 @@
+﻿@charset "utf-8";
+/*reset*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0; padding: 0 }
+form { display: inline }
+body, button, input, select, textarea { font: 12px/1.8 tahoma, arial, \5b8b\4f53, sans-serif }
+h1, h2, h3, h4, h5, h6 { font-size: 100% }
+address, cite, dfn, em, var { font-style: normal }
+code, kbd, pre, samp { font-family: courier new, courier, monospace }
+small { font-size: 12px }
+ul, ol { list-style: none }
+a { text-decoration: none }
+sup { vertical-align: text-top }
+sub { vertical-align: text-bottom }
+legend { color: #000 }
+fieldset, img { border: 0 }
+button, input, select, textarea { font-size: 100% }
+table { border-collapse: collapse; border-spacing: 0 }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { display: block; margin: 0; padding: 0 }
+mark { background: #ff0 }
+.clearfix { *zoom:1
+}
+.clearfix:before, .clearfix:after { display: table; content: "" }
+.clearfix:after { clear: both }
+.undis { display: none }
+/*common*/
+a { color: #666; text-decoration: none; }
+a:hover { color: #4AA139; }
+.ipt-txt { display: inline-block; vertical-align: middle; padding: 2px 5px; height: 20px; width: 180px; line-height: 20px; border: 1px solid #ABADB3; margin-right: 2px; }
+label.radio { display: inline-block; position: relative; padding: 0 10px 0 18px; visibility: visible; min-width: 70px; }
+label.radio-short { min-width: 30px; }
+label.radio input { margin: 0 5px 0 -14px; vertical-align: -2px; }
+.red { color: #F00; }
+.red2 { color: #C00; }
+.green { color: #090 }
+.gray { color: gray; }
+.tinge { color: #999 }
+/**/
+body { font: 12px/1.8 tahoma, arial, \5b8b\4f53, sans-serif; font-family: "Microsoft YaHei"; color: #333; }
+.logoMain{width: 860px;height:440px;position: absolute;left: 50%;top: 50%;margin-top: -220px;margin-left:-430px}
+.lmLeft{float: left;display: inline;background: url(../img/logo/leftBg.png) no-repeat left top;width: 550px;height: 433px;position: relative;}
+.lmLeft .lmlContent{position: absolute;left: 0;bottom:0;background:url(../img/logo/transparentGreen.png) repeat ;color: white;padding:10px 30px;font-size: 14px}
+.lmLeft .lmlContent h6{font-size: 22px}
+.lmRight{float: left;display: inline;padding-left: 30px;width: 280px}
+.titleH6{font-size: 24px;line-height: 30px}
+.titleP{color: #4c4c4c}
+.logoBox{padding: 20px 0}
+.logoBox p{padding-top: 15px}
+.logoBox .inputText{width: 258px;height: 38px;border:1px #dedede solid;padding: 0 10px;font-size: 14px;border-radius:5px;background: #f0f0f0}
+.logoBox .inputBtnSubmit{width: 128px;height: 36px;background: #4ea93c;border-radius: 5px;border-style: none;cursor: pointer;color: white;font-size: 14px;font-weight: bold;margin-top: 25px}
+.lmRight .phone { margin-top: 15px; margin-bottom: 20px; font-size: 20px; padding-left: 34px; height: 26px; line-height: 26px; background: url('../img/headerPhone.png') left center no-repeat; color: #459935; }
+.tipsP{font-size: 14px;line-height:20px}
+.fCopyright{padding-top: 10px}
+.fCopyright a{color: #888}

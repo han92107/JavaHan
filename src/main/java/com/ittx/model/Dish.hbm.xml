@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-6-7 9:21:56 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.ittx.model.Dish" table="dish">
+        <id name="id" type="int">
+            <column name="d_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="d_name" />
+        </property>
+        <property name="price" type="double">
+            <column name="d_price" />
+        </property>
+        <property name="putaway" type="int">
+            <column name="d_putaway" />
+        </property>
+        <property name="specialty" type="int">
+            <column name="d_specialty" />
+        </property>
+        <property name="picturePath" type="java.lang.String">
+            <column name="d_picturePath" />
+        </property>
+        <property name="material" type="java.lang.String">
+            <column name="d_material" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="d_description" />
+        </property>
+        <property name="createDate" type="java.util.Date">
+            <column name="d_createDate" />
+        </property>
+        <many-to-one name="dishCategory" class="com.ittx.model.DishCategory" fetch="join">
+            <column name="dc_id" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

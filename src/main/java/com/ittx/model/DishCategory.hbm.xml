@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-6-7 9:21:56 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.ittx.model.DishCategory" table="dish_category">
+        <id name="id" type="int">
+            <column name="dc_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="dc_name" />
+        </property>
+        <set name="dishs" table="dish" inverse="false" lazy="true">
+            <key>
+                <column name="d_id" />
+            </key>
+            <one-to-many class="com.ittx.model.Dish" />
+        </set>
+    </class>
+</hibernate-mapping>

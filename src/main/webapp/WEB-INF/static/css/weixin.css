@@ -1,0 +1,182 @@
+/* CSS Document */
+/*material*/
+
+.imgDefault{width:430px; height:214px; background:url('../img/defaultImg.png'); position:relative;}
+.imgMsg{height:38px; width:430px; line-height:38px; text-indent:10px; background:#8c8c8c; position:absolute; left:0; bottom:0;}
+.minImg{width:82px; height:82px; background:url('../img/p_imgMin.png')}
+.addList{ background:url('../img/icon.png') 0 bottom no-repeat; text-indent:50px; height:25px; line-height:25px; display:inline-block;}
+.editPannel{height:270px;}
+
+/*sendMsg*/
+.msgBox{height:220px; width:100%; margin:10px 0 0 0; border:1px solid #aaa;}
+.imgMsgS{width:90px; height:25px; padding-top:75px; display:inline-block; background:url('../img/imgMsg.png') no-repeat center 0; text-align:center;}
+.imgMsgM{width:90px;  height:25px; padding-top:75px;display:inline-block; background:url('../img/imgMsg.png') no-repeat center -222px; text-align:center;}
+.imgBox{width:width:430px; height:254px;}
+.imgMsgEdit{border-radius:0 0 0 8px;width:228px; height:54px; display:inline-block; background:url('../img/p_icon2.png') #4ea93c center 15px no-repeat;}
+.imgMsgDel{border-radius:0 0  8px 0;width:229px; height:54px; display:inline-block; background:url('../img/p_icon2.png') #4ea93c center -50px no-repeat; margin:0 0 0 1px;}
+
+/*quick exchange*/
+.div-container{
+		width:1000px;
+		margin:0 auto;
+	}
+	
+.fill-box{
+	height:80px;
+	background:url(../img/search-bar-bg.png) repeat-x;
+	border-bottom:2px solid #eee;
+}
+.fill-box p{height:80px;}
+.fill-box p img{
+	height:100%;
+}
+.exchange-searchbar{
+	height:50px;
+	position:relative;
+}
+.exchange-searchbar form{
+	position:absolute;
+	left:0;
+	top:0px;
+	width:319px;
+	height:48px;
+	background:url(../img/jrapidchange.png) no-repeat;
+		
+}
+.searchbar-input{
+	position:absolute;
+	left:16px;
+	top:8px;
+	height:5px;
+	width:200px;
+	border:none;
+	outline:none;
+	height:15px;
+	padding:5px 0;
+	background:none;
+}
+.exchange-btn{
+	border:none;
+	color:#fff;
+	position:absolute;
+	top:8px;
+	right:10px;
+	width:90px;
+	height:32px;
+	font-weight:bold;
+	background:url(../img/jsearch.png) no-repeat;
+}
+
+/* contain */
+a:focus,input:focus,button:focus{outline:none;}
+button{cursor:pointer;}
+.title-bar,.serial-number strong{
+	color:#459935;
+}
+.title-bar{
+	height:28px;
+	margin:0 0 10px 0;
+	text-indent:25px;
+	vertical-align:top;
+	background:url(../img/p_arrow.png) 0 3px no-repeat;
+}
+.table-box .thead span,.table-box .tbody span{
+	float:left;
+	height:26px;
+	padding:5px 0;
+	border-right:solid 1px #fff;
+	font-weight:normal;
+	text-indent:10px;
+}
+.table-box dt span{
+	background:#d5d6d8;	
+}
+.table-box dd span{
+	background:#e6e7e9;
+	border-bottom:solid 1px #d6d7d9;
+}
+.table-box .grid1{
+	width:70px;
+	text-align:center;
+}
+.table-box .grid2{width:696px;}
+.table-box .grid3{width:110px;}
+.table-box .grid4{width:120px;}
+.table-box .unfold a{
+	color:#48aa3d;
+}
+.table-box .fold-box{
+	display:none;
+	background:#e6e7e9;
+	border-top:solid 1px #fff;
+	padding:10px 0;
+	clear:both;
+}
+.table-box .fold-box p{
+	display:block;
+	margin:0 0 0 80px;
+}
+.total-bonds{
+	margin:80px 0 40px;	
+}
+.total-bonds p{
+	font-size:24px;
+	color:#ee6515;
+}
+.okdiv{
+	padding:20px 0;
+	position:relative;
+}
+
+/*弹出层*/
+html,body{
+	width:100%;
+	height:100%;
+}
+
+.alert-box{
+	display:none;
+	position:fixed;
+	left:50%;
+	top:50%;
+	width:320px;
+	margin:-120px 0 0 -160px;
+	border:solid 1px #d9d9d9;
+	background:#fff;
+	z-index:1000;
+}
+.alert-box .alert-title{
+	width:320px;
+	height:41px;
+	background:url(../img/alert-box-bg.png) repeat-x;
+	position:relative;
+	
+}
+.alert-title .closeBtn{
+	position:absolute;
+	right:8px;
+	top:12px;
+	width:15px;
+	height:15px;
+	background:url(../img/p_close.png) no-repeat;
+}
+.alert-container{
+	padding:20px;
+	text-align:center;
+}
+
+.alert-container .text-info{
+	margin:15px 0;
+	color:#ee6813;
+	font-size:14px;
+}
+.mask-div{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	z-index:999;
+	background:rgb(20,20,20);
+	filter:alpha(opacity=50);/* for ie*/
+	background:rgba(20,20,20,0.5);
+}

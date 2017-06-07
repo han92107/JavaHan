@@ -1,0 +1,276 @@
+﻿@charset "utf-8";
+
+/*================楼盘概况================*/
+/*表单*/
+.inputText{border: 1px #c3c7c8 solid;width:430px;height: 28px;padding: 0 10px;font-size: 14px;line-height: 28px;margin-right:8px;vertical-align: middle}
+.txtArea{border:1px #c3c7c8 solid;width: 430px;height:55px;padding:10px;font-size: 14px;resize: none}
+.inputCheckbox{vertical-align:middle;margin-right: 5px}
+.floatForm{float: left;display:inline;width: 580px}
+.unhappyMessage{padding-left: 135px;color: #ef6716;background:url(../img/icon/msgWrong.png) no-repeat 110px 4px}
+.formBox .formRow{padding: 10px 0 0 0;line-height: 28px}
+.formBox .formRow label{line-height: 30px;width:100px;text-align: right;float: left;display: inline;padding-right: 10px}
+.formBox .formRow label em{color: red;font-style: normal;padding-right:3px;vertical-align:middle;}
+.formBox .formRow .formRight{float: left;display: inline}
+.formBox .inputWidth240{width: 240px}
+.formBox .inputWidth320{width: 320px}
+.formBox .inputWidth214{width: 214px}
+.formBox .inputWidth166{width: 166px}
+.formBox .formRow .afterTxt{color: #999}
+.formBox .formH6{font-size: 16px}
+/*2013-07-17 add*/
+.formBox .mapBox{border:1px #c3c7c8 solid}
+.formBox .map{border-bottom:1px #c3c7c8 solid;width: 450px;height: 280px}
+.formBox .mapGPS{padding: 10px 0 5px 5px}
+.form-tips{padding:0 0 0 110px}
+.fUploadUl{width:470px}
+.fUploadUl li{float: left;display: inline;width: 140px;height: 70px;border:1px #c3c7c8 solid;cursor: pointer;color: #999;margin: 0 10px 10px 0}
+.fUploadUl .fUpload{display: inline-block;width:140px;height:30px;background: url(../img/add.png) no-repeat center 15px;text-align: center;padding-top: 40px}
+.fUploadUl .fUpload-img{display: inline-block;position: relative;}
+.fUploadUl .fUpload-img img{width: 140px;height: 70px}
+.fUploadUl .fUpload-img i{position: absolute;right:3px;top:3px;background: url(../img/icon/msgWrong.png) no-repeat;width: 18px;height: 18px}
+.submitDiv{padding:20px 0 0 110px}
+.submitDiv a{margin-right:5px}
+/*
+.formBox .formRow label{line-height: 30px;display: inline-block;width:100px;text-align: right;}
+.formBox .formRow label em{color: red;font-style: normal;padding-right:3px;vertical-align:middle;}
+.formBox .formRow .formRight{position: absolute;left:110px;top:10px}
+.formBox .formRow .inputAfterT{margin-right:90px}
+.formBox .formRow .afterTxt{position: absolute;left:270px;top: 0px}
+*/
+.Wdate { background:white url('../img/data.png') no-repeat right; cursor: pointer; }
+/* 时间  */
+.date_selector, .date_selector * { width: auto; height: auto; border: none; background: none; margin: 0; padding: 0; text-align: left; text-decoration: none; }
+.date_selector { background: #F2F2F2; border: 1px solid #bbb; padding: 5px; margin: -1px 0 0 0; position: absolute; z-index: 1000000; display: none; box-shadow: 0 8px 24px #666; }
+.date_selector_ieframe { position: absolute; z-index: 99999; display: none; }
+.date_selector .nav { width: 17.5em; /* 7 * 2.5em */ }
+.date_selector .month_nav, .date_selector .year_nav { margin: 0 0 3px 0; padding: 0; display: block; position: relative; text-align: center; }
+.date_selector .month_nav { float: left; width: 55%; }
+.date_selector .year_nav { float: right; width: 35%; margin-right: -8px; /* Compensates for cell borders */ }
+.date_selector .month_name, .date_selector .year_name { font-weight: bold; line-height: 20px; }
+.date_selector .button { display: block; position: absolute; top: 0; width: 18px; height: 18px; line-height: 17px; font-weight: bold; color: #003C78; text-align: center; font-size: 120%; overflow: hidden; border: 1px solid #F2F2F2; }
+.date_selector .button:hover, .date_selector .button.hover { background: none; color: #003C78; cursor: pointer; border-color: #ccc; }
+.date_selector .prev { left: 0; }
+.date_selector .next { right: 0; }
+.date_selector table { border-spacing: 0; border-collapse: collapse; clear: both; width: 18em; }
+div.date_selector th, div.date_selector td { width: 2.5em; height: 2em; padding: 0; text-align: center; color: black; }
+.date_selector td { border: 1px solid #ccc; line-height: 2em; text-align: center; white-space: nowrap; color: #003C78; background: white; }
+.date_selector td.today { background: #FFFEB3; }
+.date_selector td.unselected_month { color: #ccc; }
+.date_selector td.selectable_day { cursor: pointer; }
+.date_selector td.selected { background: #D8DFE5; font-weight: bold; }
+.date_selector td.selectable_day:hover, .date_selector td.selectable_day.hover { background: #003C78; color: white; }
+.date_selector .time_selector { padding-top: 5px; }
+.date_selector .time_selector input { background: #FFF; width: 20px; display: inline-block; vertical-align: middle; padding: 2px 5px; height: 20px; line-height: 20px; border: 1px solid #ABADB3; margin: 0 2px; }
+.date_selector .time_selector button { vertical-align: middle; background: #298BC8; color: #FFF; height: 26px; width: 36px; text-align: center; cursor: pointer; }
+/* 模拟下拉框-dropdown样式 */
+.dropdown { position: relative; display: inline-block; text-align: left; vertical-align: middle; _vertical-align: 2px; margin-right: 2px; line-height: 10px; *display:inline;*zoom:1}
+.dropdown dt { line-height: 24px; cursor: pointer; display: inline-block; height: 24px; text-align: left; padding: 3px 30px 3px 8px; border: 1px #c3c7c8 solid; background: #FFF url(../img/icon_dropdown.png) 100% 50% no-repeat; overflow: hidden;*display:inline;*zoom:1}
+.dropdown dd { line-height: 18px; position: absolute; top: 100%; left: 0; margin: 1px 0 0; background: #fff; display: none; border: 1px solid #a6a6a6; padding: 4px 0; -ms-box-shadow: 0 5px 10px rgba(0,0,0,0.2); box-shadow: 0 5px 10px rgba(0,0,0,0.2); zoom: 1;max-height: 192px; overflow: hidden; overflow-y: auto;_width: expression(this.offsetWidth > 278 ? '278px':'198px')}
+.dropdown-open dd { display: block; }
+.dropdown dd li { cursor: pointer; display: inline; background: none}
+.dropdown dd a { display: block; padding: 3px 15px; white-space: nowrap; font-size: 12px; }
+/*手机预览*/
+.mobile-preview{float: left;display: inline;width: 360px;padding:10px 0 0 50px;/*overflow: hidden;*/}
+.mobile-preview .mpTitle{font-size: 20px;color: #2f931b;font-weight: normal;text-align: center;padding:20px 0}
+.fUpload720 span.fUpload{width:340px;height:70px;border:1px #c3c7c8 solid;cursor: pointer;background-position: center center;padding-top: 120px;color: #999;margin-top: 10px}
+.fUpload720 span.fUpload-img{width:340px;height:190px;border:1px #c3c7c8 solid;cursor: pointer;;margin-top: 10px}
+.fUpload720 span.fUpload-img img{width: 340px;height: 190px}
+.formCols{font-size: 16px;line-height:30px;padding-top: 5px}
+.formCols p{padding-bottom: 10px}
+.i-switch{position: absolute;left: 200px;top: 10px;background:url(../img/icon/switch.png) no-repeat;width:50px;height:23px;cursor: pointer;}
+i.f-close{background-position: -55px 0}
+.mobile-preview .submitDiv{padding: 0}
+/*2013-07-17 add*/
+.formColsTitle{background: #d8eace;padding:10px;margin-bottom: 1px}
+.formColsTitle .i-switch{left: 300px;top: 15px}
+.mpRightBox{border: 1px #c3c7c8 solid;padding-left:8px;padding-bottom: 15px;width: 350px;overflow: hidden;}
+/*弹出层*/
+.layer-box{background: #f7f7f7;border: 1px #e0dfdf solid;box-shadow:0 3px 3px #ccc;z-index: 1000}
+.layer-fixed{display: none;position: absolute;left:50%;top: 50%;}
+.layer-box .layerTitle{background: url(../img/common/layerTitleBg.png) repeat-x; height:39px;border-bottom: 1px #d5d5d5 solid;line-height: 38px;padding-left: 20px;position: relative;font-size: 14px}
+.layer-box .layerTitle .closeBtn{position: absolute;right: 10px;top: 12px;background: url(../img/p_close.png) no-repeat;width: 15px;height: 15px}
+/*埋红包*/
+.layer-redPacket{width:600px;margin-left:-300px;margin-top: -200px;z-index: 1000}
+.lrpBox{padding: 20px 0;position: relative;}
+.lrpBox i{position: absolute;left:20px;top: 10px;background: url(../img/houseImg/redPacket.png) no-repeat;width: 116px;height: 92px}
+.lrpBox .lrp-h6{font-size: 18px;font-weight: normal;padding-left: 150px}
+.lrpBox .lrp-p{padding-left: 150px;padding-bottom:15px}
+.lrpRow{line-height: 30px;padding: 5px 0 5px 80px}
+.lrpRow label{width: 130px;text-align: right;float: left;display: inline;padding-left:10px}
+.lrpRow .lrpr-right{float: left;width: 375px;display: inline;}
+.lrpRow .lrpr-right .inputText,.lrpRow .lrpr-right .txtArea{background-color: #f7f7f7}
+.lrpBox .submitDiv{clear:both;padding: 0 0 10px 150px;*padding-top: 10px}
+/*================楼盘亮点================*/
+.itListUl li{float:left;display: inline;background: #e6e7e8;width: 485px;margin-top: 20px;position: relative}
+.itListUl em{position: absolute;right: 0;top: 0;background: url(../img/icon/listSiteBg.png) no-repeat;width:32px;height:65px;font-style: normal;color: white;font-weight: bold;font-size: 20px;padding:7px 0 0 40px;overflow: hidden;}
+.itListUl .ilu-content{padding: 25px}
+.itListUl .ilu-content h6{font-size:16px;vertical-align:top;padding-bottom: 5px}
+.itListUl .ilu-content h6 i{display: inline-block;background: url(../img/houseImg/redPacket-small.png) no-repeat;width: 26px;height: 17px;margin-left: 5px;vertical-align:middle;}
+.itListUl .ilu-content .ilu-p{height:70px;overflow: hidden;margin-bottom: 10px}
+.ilu-operate{background: #dedfe1;border-top:2px #c9cfcf solid}
+.ilu-operate a{display: inline-block;width:240px;height: 46px;line-height: 46px;text-align: center;vertical-align: middle;*display: inline;*zoom:1;_padding-top:10px;_height:36px;}
+.ilu-operate a i{display: inline-block;background: url(../img/priviliegeWriteBiue.png) no-repeat;width: 27px;height: 26px;vertical-align: middle;margin-right: 10px}
+.ilu-operate a i.del{background: url(../img/priviliegeDeleteSelect.png) no-repeat}
+.ilu-operate a.last{border-left: 1px #c9cfcf solid;width: 239px}
+.itListUl em.top{background-position:0 -72px;padding: 0;width: 73px;height: 73px}
+.itNewsUl li{width: 545px}
+.itNewsUl .ilu-content .ilu-p{height: 120px}
+.itNewsUl .ilu-p img{float: left;display: inline;width: 160px;height: 120px}
+.itNewsUl .ilu-p .ld-right{float: left;display: inline;width:325px;padding-left: 10px;line-height: 22px}
+.itNewsUl .ld-right .ld-contxt{height:90px;overflow:hidden;margin-bottom: 10px}
+.itNewsUl .ilu-content h6{padding-bottom:20px}
+.itNewsUl .ilu-operate a{width:272px}
+.itNewsUl .ilu-operate a.last{width:272px}
+/*================置业顾问================*/
+.adviserUl li{float: left;display: inline;background:#f7f7f7;border:1px #d5d5d5 solid;width:210px;text-align: center;margin: 20px 30px 0 0}
+.adviserUl .au-content img{width: 180px;height: 180px}
+.adviserUl .au-content{text-align: left;padding: 15px}
+.adviserUl .au-content p{padding: 5px 0 0 0}
+.adviserUl .ilu-operate a{width: 103px}
+.adviserUl .ilu-operate a.last{width: 102px}
+.adviser-add{width: 600px;padding-bottom: 30px;margin-left:-300px;margin-top: -230px}
+.fUpload180 li{width: 180px;height: 180px}
+.fUpload180 .fUpload{width: 180px;height:70px;background-position: center center;padding-top:110px;}
+.fUpload180 .fUpload-img img{width: 180px;height: 180px}
+/*================管理意向登记表================*/
+.checkForm .cfTitle{font-weight: normal;font-size: 16px;position: relative;height: 38px;line-height: 38px;padding-bottom: 5px}
+.checkForm .cfAdd{position: absolute;right: 80px;top:0}
+.checkBoxUl{padding-bottom: 25px}
+.checkBoxUl li{float: left;display: inline;padding:8px 25px 8px 0}
+.checkBoxUl li .inputCheck{height:30px;vertical-align: middle;margin-right:10px}
+.checkBoxUl li span{display: inline-block;width: 75px;height: 28px;line-height: 28px;border: 1px #4ea93c solid;text-align: center;vertical-align: middle}
+.checkForm .submitDiv{padding: 0}
+/*================营销工具包================*/
+.marketIndexBox{background:url(../img/common/layerTitleBg.png) repeat-x 0 -129px;border:1px #dbdbdb solid;float: left;display: inline;width: 300px;position: relative;border-radius: 6px;box-shadow: 0px 2px 2px #ccc;margin: 20px 45px 20px 0}
+.marketIndexBox h6{color: #459935;font-size: 18px;text-align: center;font-weight: normal;padding:125px 0 0 0}
+.marketIndexBox i{background: url(../img/icon/marketIcon.png) no-repeat;position: absolute;left:112px;top:50px;width:74px;height: 57px}
+.marketIndexBox .i2{background-position: 0 -62px}
+.marketIndexBox .i3{background-position: 0 -124px}
+.marketIndexBox .i4{background-position: 0 -186px}
+.marketIndexBox p{padding:15px 20px;color: #999}
+.mibBottom{background: #efefef;height: 48px;line-height: 48px;padding: 0 20px}
+.mibBottom span{float: left;width: 130px}
+.marketIndexBox:hover{box-shadow: 0px 3px 3px #aaa}
+.marketIndexBox:hover .mibBottom{background: #dbdbdb}
+.marketIndexlast{margin-right: 0}
+/*================购房VIP================*/
+.mVip-openState{background:#d8eace;position: relative;height: 60px;line-height: 60px;color: #2f931b;padding: 0 20px}
+.mVip-openState .i-switch{top:18px;left: auto;right:20px}
+.imgTxtLeft{float: left;display: inline;background: #edeeec;padding: 15px;border: 1px #e4e1e1 solid;margin:20px 20px 0 0}
+.imgTxtLeft img{width: 260px;height: 212px}
+.inforRight{float: left;display: inline;width:688px;padding-top: 20px;}
+.irTitle{position: relative;height: 38px;line-height: 38px;font-size: 18px;padding-bottom: 10px}
+.irTitle span{right: 0;position: absolute;top: 0}
+.irTitle .blueBut{margin-left: 10px}
+.irContent{padding:10px 0}
+.exampleTxt{padding-left: 110px;color: #9b9b9b}
+.irContent .more{padding:50px 0 0 0;text-align: right}
+.irContent .more a{color: #4ea93c}
+/*================购房红包================*/
+.iSwitch-layer{width:400px;margin-left: -200px;margin-top: -100px}
+.promptBox{position:relative;padding: 0 10px}
+.promptBox i{position: absolute;left:23px;top:15px;background:url(../img/icon/promptIcon.png) no-repeat;width: 57px;height: 51px}
+.promptBox h6{padding: 15px 0 5px 90px;font-size: 18px}
+.promptBox p{padding: 0 0 0 90px;color: #6e6e6e}
+.promptBox .submitDiv{padding:30px 0 20px 0;text-align: center;}
+/*================购房红包================*/
+.tableBox{width: 1000px}
+.tableBox td,.tableBox th{padding:5px 10px;border-right: 1px white solid}
+.tableBox thead{background:#d5d7d9;border-top: 1px #bcbfc1 solid}
+.layer-mrEdit{width: 600px;margin-left: -300px;margin-top: -200px}
+.layer-mrEdit .i-switch{position: absolute;left:160px;top:9px;background:url(../img/icon/switch.png) no-repeat;width:50px;height:23px;cursor: pointer;}
+.layer-mrEdit i.f-close{background-position: -55px 0}
+.layer-mrEdit .i-weibo .i-switch{background:url(../img/icon/switch.png) no-repeat -111px 0;width:97px}
+.layer-mrEdit .i-weibo i.f-close{background-position:-213px 0}
+.layer-mrEdit .lrpRow{padding-left:0 }
+.layer-mrEdit .lrpRow label{padding-left: 0;width: 160px}
+.layer-mrEdit .lrpBox .submitDiv{padding-top:15px;padding-left:160px}
+.layer-mrEdit .lrpRow .lrpr-right{width: 430px}
+/*================营销指纹================*/
+.mqnBox .formRow label{width: 165px}
+.mqnBox .form-tips{padding-left: 170px}
+.mqnBox .submitDiv{padding-left:20px}
+.lNewsList-layer{width: 740px;margin-left: -370px;margin-top: -200px}
+.lNewsList-layer .tableDiv{padding: 20px 20px 10px 20px}
+.lNewsList-layer .tableBox{width:700px}
+.lNewsList-layer .bigpage{margin:0;width: 730px}
+.lNewsList-layer .submitDiv{padding: 10px 0 30px 0;text-align: center;}
+.qrPrompt .promptBox h6{padding:30px 0 0 110px}
+.qrPrompt .promptBox i{left: 55px}
+/*================客户列表================*/
+.tabBox{position: relative;}
+.tabBox li{float: left;display: inline;width: 140px;height: 34px;text-align: center;line-height: 34px;background: #e6e7e8;border-radius:6px 6px 0 0;margin-right:5px;margin-bottom:2px}
+.tabBox li a{color: #333;display: inline-block;}
+.tabBox li.on{background: #4ea93c;color: white;font-weight: bold;margin-bottom: 0;height: 36px}
+.tabBox li.on a{color: white}
+.tabBox .dropdown dd li a:hover{color:#4ea93c}
+.searchPosition{position: absolute;right: 0;top: 0}
+.cEdit-layer{width: 450px;margin-left: -225px;margin-top: -100px;padding-bottom: 30px}
+.deduct-layer .inforBox h6{padding: 0}
+.cwxEdit-layer .submitDiv{padding-bottom:30px}
+.searchTerm{text-align: right;padding-bottom: 10px;vertical-align: middle;}
+.searchTerm .dropdown{vertical-align: middle;}
+.searchTerm .inputText{vertical-align: middle;height: 30px;margin-left: 5px;*margin-left:10px}
+.searchA{background: url(../img/common/layerTitleBg.png) repeat-x;display: inline-block;width:50px;height: 28px;border: 1px #c3c7c8 solid;text-align: center;border-radius: 4px;vertical-align: middle;}
+/*进度条*/
+.progress{width: 486px;height:18px;border-radius: 10px;border: 1px #eee solid;background: white;box-shadow:-1px 1px 5px #aaa inset;padding: 0 2px;margin-bottom:30px}
+.progress .finish{background: #4ea93c;display: inline-block;height:14px;border-radius: 10px;margin:2px 0 1px;position:relative}
+.progress .finish em{position: absolute;right:-75px;top: 15px;background: url(../img/icon/progressArrow.png) no-repeat;font-style: normal;padding-top:8px;width: 80px}
+.inforBox{padding:20px}
+.inforBox h6{font-size:16px;font-weight: normal;padding: 20px 0}
+.inforBox p{padding:5px 0;}
+.inforBox p label{display: inline-block;width: 240px}
+.inforBox .submitDiv{padding: 10px 0 0 0;}
+/*================广告管理================*/
+.adUl li{float: left;display: inline;width: 490px;background: #e6e7e8;margin:10px 20px 10px 0}
+.adUl li img{padding:15px;width: 460px;height: 230px}
+.adUl .ilu-operate a i{margin-right:0;}
+.adUl .adContent{padding:0 15px 15px 15px}
+.wsa-row{padding: 10px 0}
+.wsa-row span{padding-right: 10px}
+.upload640 .fUploadUl li{width: 460px;height: 230px}
+.upload640 .fUploadUl .fUpload-img img{width: 460px;height: 230px}
+.upload640 .fUploadUl .fUpload{width: 460px;height:80px;padding-top:150px;background-position: center center}
+.websiteAdBox .submitDiv{padding: 20px 0 0 0}
+/*================统计分析================*/
+.statBox{border:1px #dedede solid;position: relative;margin-top:20px}
+.statBox .titleH6{background:#d5d7d9;height:40px;line-height: 40px;font-size: 16px;font-weight: normal;padding-left:20px}
+.statContent{padding: 10px;overflow: hidden}
+.statContent485{width: 485px;}
+.colorBox{position: absolute;left:380px;top:140px}
+.colorBox li{float: left;display: inline;width: 100%;line-height: 16px;vertical-align: middle;padding: 5px 0}
+.colorBox li i{display: inline-block;width: 16px;height: 16px;vertical-align: middle;margin-right:8px}
+.colorBox .blue{background: #2599d3}
+.colorBox .yellow{background: #b8e122}
+.colorBox .green{background: #1dd62c}
+.colorBox .orange{background: #f79800}
+.colorBox .pink{background: #e933aa}
+.colorBox .red{background: #f61d11}
+.colorBox .yellowz{background: #f8ff1a}
+.colorBox .f76100{background: #f76100}
+.colorBox .ff751a{background: #ff751a}
+.chooseTime{padding: 20px 20px 0 0}
+.timeBox{padding:0 0 30px 20px}
+.timeBox span{display: inline-block;height: 30px;border:1px #4ea93c solid;border-radius: 6px;line-height: 30px;margin-right:5px;*display: inline;*zoom:1;}
+.timeBox a{color: #333;display: inline-block;padding: 0 5px}
+.timeBox a.on,.timeBox a:hover{background:#4ea93c;color: white }
+.stat485{width: 485px;float: left;display: inline;}
+.statRight{margin-left: 25px}
+.swdH6{padding: 20px 0;font-size: 14px;font-weight: normal;}
+.statBox .sqvTitle{font-size: 16px;padding:10px 20px}
+.fkTime{position: absolute;right: 20px;top:0}
+.statBox .colorRow{left:820px;top:50px}
+.statBox .colorRow li{width:87px}
+.statBox .mqvPrompt{padding: 20px 40px}
+/*删除上传图片*/
+.delete_img_btn{position: absolute;right: 3px;top: 3px;background: url(../img/icon/msgWrong.png) no-repeat;width: 18px;height: 18px;}
+/*新建营销指纹*/
+.mediaBox{border:1px #c3c7c8 solid;margin: 10px 0;padding:30px 0 10px 0;position: relative;}
+.mediaBox .closed{position: absolute;right:10px;top:10px;background: url(../img/icon/msgWrong.png) no-repeat;width:18px;height: 18px;text-indent: -9999px;cursor: pointer;}
+.addMedia{border:1px #c3c7c8 solid;text-align: center;line-height: 18px;padding:10px 0;cursor: pointer;}
+.addMedia img{vertical-align: middle;margin-right: 10px}
+/*提示绑定消息*/
+.mrsp-prompt{box-shadow: 1px 2px 5px #ccc;width: 360px;position: relative;padding:10px 20px 30px 20px;margin: 50px 0 0 300px}
+.mrsp-prompt i{position: absolute;left: 40px;top: 25px;background: url(../img/common/promptIcon-ok.png) no-repeat;width: 66px;height: 53px}
+.mrsp-prompt h6{padding: 10px 0 0 100px;font-size: 14px;font-weight:normal;}
+.mrsp-prompt p{padding: 10px 0 0 100px}
