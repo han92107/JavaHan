@@ -13,9 +13,7 @@
             http://www.springframework.org/schema/tx/spring-tx.xsd">
             
      <context:component-scan base-package="com.ittx">
-		<!--除了base-package包下@Controller注解全都扫描 --> 
-<!-- 		<context:exclude-filter type="annotation" -->
-<!-- 			expression="org.springframework.stereotype.Controller" /> -->
+     		<!-- 不扫描Controller注解，其他的都扫描 -->
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 	</context:component-scan>
     <!-- 读取jdbc.properties属性信息 -->

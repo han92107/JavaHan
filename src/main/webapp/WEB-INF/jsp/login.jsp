@@ -31,7 +31,7 @@
             <div style="height:150px;"></div>
             <div class="media media-y margin-big-bottom">           
             </div>                  
-            <form action="<%=request.getContextPath()%>/Controller/login" mothed="post">
+            <form action="${pageContext.request.contextPath }/logins" method="post">
             <div class="panel loginbox">
                 <div class="text-center margin-big padding-big-top"><h1>管理员登陆</h1></div>
                 <div class="panel-body" style="padding:30px; padding-bottom:10px; padding-top:10px;">
