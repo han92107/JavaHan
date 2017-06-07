@@ -8,21 +8,22 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.ittx.dao.impl.DishDaoImpl;
+import com.ittx.dao.intf.DishDao;
 import com.ittx.model.Dish;
 import com.ittx.service.intf.DishService;
 @Transactional
-@Service("dishServiceImpl")
+@Service("dishService")
 public class DishServiceImpl implements DishService{
 	@Autowired
-	private DishDaoImpl dishDaoImpl;
+	private DishDao dishDao;
 	@Override
 	public void add(Dish dish) {
-		dishDaoImpl.add(dish);
+		dishDao.add(dish);
 	}
 
 	@Override
 	public List<Dish> getDish() {
-		return dishDaoImpl.getDish();
+		return dishDao.getDish();
 	}
 
 }

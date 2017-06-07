@@ -14,7 +14,7 @@ import com.ittx.dao.intf.DishDao;
 import com.ittx.model.Dish;
 import com.ittx.model.DishCategory;
 
-@Repository("dishDaoImpl")
+@Repository("dishDao")
 public class DishDaoImpl extends HibernateDaoSupport implements DishDao {
 	
 	//给HibernateDaoSupport注入sessionFactory
