@@ -32,14 +32,18 @@ public class test {
 //		}
 //		DishCategory dishCategory = new DishCategory();
 //		dishCategory.setId(1);
-		List<Dish> list = dishDao.getDish();
-		List<DishCategory> list2 = dishDao.getDishcategory();
-		for (Dish dish : list) {
-			for (DishCategory dishCategory : list2) {
-				
-				System.out.println(dish.getName()+dishCategory.getName());
-			}
-		}
+//		List<Dish> list = dishDao.getDish();
+//		List<DishCategory> list2 = dishDao.getDishcategory();
+//		for (Dish dish : list) {
+//			for (DishCategory dishCategory : list2) {
+//				
+//				System.out.println(dish.getName()+dishCategory.getName());
+//			}
+//		}
+		Dish dish = new Dish();
+		dish.setName("真真真菜");
+		dish.setPrice(55);
+		dishDao.add(dish);
 	}
 
 }

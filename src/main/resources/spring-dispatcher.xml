@@ -8,8 +8,10 @@
      http://www.springframework.org/schema/mvc  
      http://www.springframework.org/schema/mvc/spring-mvc.xsd">
      <!-- 扫描注解 -->
-	<context:component-scan base-package="com.ittx.controller"/>		
-	<mvc:annotation-driven /> 
+	<context:component-scan base-package="com.ittx" use-default-filters="false" >
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>		
+<!-- 	<mvc:annotation-driven />  -->
     
 <!--         <mvc:interceptors> -->
 <!-- 		对所有请求进行拦截  -->
@@ -22,11 +24,12 @@
 <!--  		</mvc:interceptor> -->
 		
 <!--  	</mvc:interceptors> -->
-
+	<mvc:annotation-driven></mvc:annotation-driven>
 	<!-- 静态资源不被springmvc过滤 -->
 	<mvc:resources mapping="/static/css/**" location="/WEB-INF/static/css/" />
 	<mvc:resources mapping="/static/js/**" location="/WEB-INF/static/js/" />
 	<mvc:resources mapping="/static/img/**" location="/WEB-INF/static/img/" />
+	<mvc:resources mapping="/static/images/**" location="/WEB-INF/static/images/" />
 	<mvc:resources mapping="/static/ueditor/**" location="/WEB-INF/static/ueditor/" ></mvc:resources>
 	<!-- 前后缀 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

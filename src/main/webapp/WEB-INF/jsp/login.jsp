@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="renderer" content="webkit">
     <title>登录</title>  
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/static/css/pintuer.css">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/static/css/admin.css">
-    <script src="<%=request.getContextPath()%>/static/js/jquery.js"></script>
-    <script src="<%=request.getContextPath()%>/static/js/pintuer.js"></script> 
+    <link rel="stylesheet" href="static/css/pintuer.css">
+    <link rel="stylesheet" href="static/css/admin.css">
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/pintuer.js"></script> 
     <script>
     /**
     	1、self:当前窗口对象（如果是在iframe里，则为该框架的窗口对象）
@@ -31,13 +31,13 @@
             <div style="height:150px;"></div>
             <div class="media media-y margin-big-bottom">           
             </div>                  
-            <form action="<%=request.getContextPath()%>/Admin_login" mothed="post">
+            <form action="<%=request.getContextPath()%>/Controller/login" mothed="post">
             <div class="panel loginbox">
                 <div class="text-center margin-big padding-big-top"><h1>管理员登陆</h1></div>
                 <div class="panel-body" style="padding:30px; padding-bottom:10px; padding-top:10px;">
                     <div class="form-group">
                         <div class="field field-icon-right">
-                            <input type="text" class="input input-big" name="name" placeholder="登录账号" data-validate="required:请填写账号" />
+                            <input type="text" class="input input-big" name="username" placeholder="登录账号" data-validate="required:请填写账号" />
                             <span class="icon icon-user margin-small"></span>
                         </div>
                     </div>

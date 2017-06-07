@@ -13,8 +13,8 @@ import org.springframework.transaction.annotation.Transactional;
 import com.ittx.dao.intf.DishDao;
 import com.ittx.model.Dish;
 import com.ittx.model.DishCategory;
-@Transactional
-@Repository("DishDaoImpl")
+
+@Repository("dishDaoImpl")
 public class DishDaoImpl extends HibernateDaoSupport implements DishDao {
 	
 	//给HibernateDaoSupport注入sessionFactory
