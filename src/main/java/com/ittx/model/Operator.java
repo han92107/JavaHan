@@ -2,23 +2,26 @@ package com.ittx.model;
 
 import java.util.Date;
 
+import org.springframework.stereotype.Component;
+@Component
 public class Operator {
 	private int id;
 	private String username;
 	private String password;
-	private Date operateTime;
+	private String operateTime;
+	private int loginCount;
 	
 	public Operator() {
 	}
 	
-	public Operator(String username, String password, Date operateTime, int loginCount) {
+	public Operator(String username, String password, String operateTime, int loginCount) {
 		this.username = username;
 		this.password = password;
 		this.operateTime = operateTime;
 		this.loginCount = loginCount;
 	}
 	
-	public Operator(int id, String username, String password, Date operateTime, int loginCount) {
+	public Operator(int id, String username, String password, String operateTime, int loginCount) {
 		this.id = id;
 		this.username = username;
 		this.password = password;
@@ -43,10 +46,10 @@ public class Operator {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public Date getOperateTime() {
+	public String getOperateTime() {
 		return operateTime;
 	}
-	public void setOperateTime(Date operateTime) {
+	public void setOperateTime(String operateTime) {
 		this.operateTime = operateTime;
 	}
 	public int getLoginCount() {
@@ -55,7 +58,5 @@ public class Operator {
 	public void setLoginCount(int loginCount) {
 		this.loginCount = loginCount;
 	}
-	private int loginCount;
-	
 	
 }

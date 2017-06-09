@@ -39,6 +39,7 @@
 			<list> 
 				<value>com/ittx/model/Dish.hbm.xml</value>
 				<value>com/ittx/model/DishCategory.hbm.xml</value>
+				<value>com/ittx/model/Operator.hbm.xml</value>
 			</list> 
 		</property> 
 		<property name="hibernateProperties">

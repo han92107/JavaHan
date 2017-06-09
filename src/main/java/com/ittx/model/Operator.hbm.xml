@@ -3,10 +3,10 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 2017-6-7 9:21:56 by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
-    <class name="com.ittx.model.Operator" table="Operator">
+    <class name="com.ittx.model.Operator" table="operator">
         <id name="id" type="int">
             <column name="id" />
-            <generator class="assigned" />
+            <generator class="native" />
         </id>
         <property name="username" type="java.lang.String">
             <column name="username" />
@@ -14,7 +14,7 @@
         <property name="password" type="java.lang.String">
             <column name="password" />
         </property>
-        <property name="operateTime" type="java.util.Date">
+        <property name="operateTime" type="java.lang.String">
             <column name="operateDate" />
         </property>
         <property name="loginCount" type="int">

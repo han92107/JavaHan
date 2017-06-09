@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* CSS Document */
+.food_table_content
+{
+	margin-left:100px;
+}
+
+.food_table_containWidth
+{
+	margin-left:100px;
+}
+
+.tabContent {width:900px; clear:left; overflow:hidden; }
+.food_table_tabTest { width:85%;}
+.tabContent div { float:left;  width:130px; height:130px; margin-top:20px; margin-right:20px; color:white;}
+.food_table_add{ background:url(../img/foodImg_1.png) no-repeat;}
+.food_table_normal{ background:url(../img/foodImg_2.png) no-repeat;}
+.food_table_normal span { line-height:130px; text-align:center; width:130px; font-weight:900; font-size:70px; display:inline-block;}
+.food_table_lock span{ line-height:130px; text-align:center; width:130px; font-weight:900; font-size:70px; display:inline-block;}
+.food_table_hover{ background:url(../img/foodImg_4.png) no-repeat;}
+.tabContent a { display:block; width:130px; text-align:center; line-height:30px;}
+.food_table_edit {margin-top:20px; color:white;}
+.food_table_lock { background:url(../img/foodImg_3.png) no-repeat;}
+.food_table_lock_hover{ background:url(../img/foodImg_3.png) no-repeat;}
+.food_table_restore { margin-top:30px;}
+.footer {clear:both; overflow:hidden;}
+
+.food_table_add_room{background:url(../img/foodImg_1.png) no-repeat; background-color:#D6D7D9;}
+.food_table_normal_room{ background-color:#40A94C;}
+.food_table_normal_room span {display:block; line-height:45px;}
+.food_table_number{font-size:40px; text-align:left; margin-left:10px; margin-top:10px;}
+.food_table_name {font-size:20px;margin-left:10px;}
+.food_table_hover_room{ background-color:#088129;}
+.food_table_lock_room{background-color:#8a8b8d;}
+.food_table_lock_room span {display:block; line-height:45px;}
+.food_table_lock_hover_room{background:#6A6A6A;}

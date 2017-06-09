@@ -1,3 +1,11 @@
 eclipse.preferences.version=1
+encoding//src/main/webapp/WEB-INF/jsp/addDish.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/dishSet.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/login.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/jsp/main.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/settleRequest.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/settleRequest2.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/settleRequest3.html=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/tableSetting.jsp=UTF-8
+encoding/<project>=UTF-8
 encoding/src=UTF-8

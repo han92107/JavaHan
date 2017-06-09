@@ -1,0 +1,57 @@
+.desk-box, .desk-box2 { display: inline-block; width: 130px; height: 130px; background: url(../img/desk_circle.png) 50% 50% no-repeat; margin: 10px; color: #FFF; position: relative; vertical-align: top; line-height: 1.5; *display:inline; *zoom:1; }
+.desk-box .num { position: absolute; top: 5px; left: 40px; font-size: 12px; }
+.desk-box .num em { font-size: 32px; }
+.desk-box .name { position: absolute; top: 50px; left: 40px; }
+.desk-box .status { position: absolute; top: 80px; left: 40px; }
+.desk-box .time { position: absolute; top: 100px; left: 40px; font-size: 12px; }
+.desk-box2 { background-image: url(../img/desk_square.png); }
+.desk-box2 .num em { font-size: 32px; position: absolute; top: 5px; left: 10px; }
+.desk-box2 .name { position: absolute; top: 50px; left: 10px; }
+.desk-box2 .status { position: absolute; top: 80px; left: 10px; }
+.desk-box2 .time { position: absolute; top: 100px; left: 10px; font-size: 12px; }
+.desk-box .link,.desk-box2 .link { font-size: 18px; position: absolute; top: 0; left: 0; width: 130px; height: 130px; line-height: 130px; text-align: center; color: #FFF; background: url(../img/desk_circle_on.png) 50% 50% no-repeat; display: none; }
+.desk-box2 .link{background-image: url(../img/desk_square_on.png);}
+.desk-box:hover .link,.desk-box2:hover .link{ display:block;}
+.tabListLable{
+color:#757575; font-size:12px;}
+.tabListLable span{
+margin-right:20px;}
+.alertP{
+line-height:10px; color:#000000;}
+.cutLine{ border-bottom:1px dashed #334455; width:200px;}
+
+
+.desk-consumption-box, .desk-consumption-box2 { display: inline-block; width: 130px; height: 130px; background: url(../img/foodImg_2.png) 50% 50% no-repeat; margin: 10px; color: #FFF; position: relative; vertical-align: top; line-height: 1.5; *display:inline; *zoom:1; }
+.desk-consumption-box .num { position: absolute; top: 5px; left: 40px; font-size: 12px; }
+.desk-consumption-box .num em { font-size: 32px; }
+.desk-consumption-box .name { position: absolute; top: 50px; left: 40px; }
+.desk-consumption-box .status { position: absolute; top: 80px; left: 40px; }
+.desk-consumption-box .time { position: absolute; top: 100px; left: 40px; font-size: 12px; }
+.desk-consumption-box2 { background-image: url(../img/desk_consumption_square.png); }
+.desk-consumption-box2 .num em { font-size: 32px; position: absolute; top: 5px; left: 10px; }
+.desk-consumption-box2 .name { position: absolute; top: 50px; left: 10px; }
+.desk-consumption-box2 .status { position: absolute; top: 80px; left: 10px; }
+.desk-consumption-box2 .time { position: absolute; top: 100px; left: 10px; font-size: 12px; }
+.desk-consumption-box .link,.desk-consumption-box2 .link { font-size: 18px; position: absolute; top: 0; left: 0; width: 130px; height: 130px; line-height: 130px; text-align: center; color: #FFF; background: url(../img/foodImg_4.png) 50% 50% no-repeat; display: none; }
+.desk-consumption-box2 .link{background-image: url(../img/desk_consumption_square_on.png);}
+.desk-consumption-box:hover .link,.desk-consumption-box2:hover .link{ display:block;}
+
+
+
+
+.list_main{background:#e6e7e8; width:1000px; height: auto; padding-top:20px;}
+.item_main{background:url(../img/check_request_item_bg.png); width:414px; height:160px; float:left; margin-left:40px; margin-right:40px; margin-bottom:20px;}
+.item_left{width:268px; height:160px; padding-left:20px; float:left}
+.item_left p{padding:0px; margin-top:10px;}
+.item_left_money{font-size:40px; color:#FF9900}
+.item_right{width:126px; height:160px; float:left;}
+.item_right_p1{padding:0px;display:block;width:126px;text-align:center; margin-top:30px;}
+.item_right_p2{padding:0px;display:block;width:126px;text-align:center}
+.item_right_div{margin-bottom:10px; margin-left:0px; margin-right:0px;}
+.item_right_span{border:1px solid black; display:block; text-align:center; width:40px; float:left; padding-left:5px; padding-right:5px; margin-left:5px; margin-right:5px;}
+.check_request_item_minus{ background:url(../img/check_request_minus.png); width:14px; height:14px; float:left; margin-top:7px; margin-left:23px}
+.check_request_item_plus{ background:url(../img/check_request_plus.png); width:14px; height:14px; float:left; margin-top:7px;	}
+.complete_style{margin-left:auto; margin-right:auto; width:500px; height:300px; margin-top:100px;}
+.complete_right{width: auto; height: auto; float:left;}
+.complete_right_money{font-size:35px; color:#FF6600; padding:0px;}
+.complete_right_current{margin-left:20px; padding:0px;}

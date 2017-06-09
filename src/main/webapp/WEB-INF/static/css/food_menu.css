@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+.food_dish_list{
+clear:both;
+height:100%;
+overflow:hidden;
+display:block;
+margin-top:5px;
+}
+.food_dish_list_item{
+display: inline-block;
+float: left;
+margin-right:10px;
+width:200px;
+height:200px;
+border:1px solid #CECECE; 
+border-radius:4px;
+padding-left:5px;
+padding-right:5px;
+font-size:12px;
+margin-top:10px;
+background-color:#FFFFFF;
+}
+.food_dish_list_add_item{
+display: inline-block;
+float: left;
+margin-right:10px;
+width:212px;
+height:200px;
+border-radius:4px;
+font-size:12px;
+margin-top:10px;
+
+}
+.food_dish_list_item img{
+clear:both; overflow:hidden; 
+width:200px;
+height:100px;
+margin-top:8px;
+}
+.food_dish_detail{
+position:relative;
+}
+.food_dish_type_list_item{
+display: inline-block;
+float: left;
+margin-right:10px;
+width:212px;
+height:200px;
+border-radius:4px; 
+margin-top:10px;
+border:1px solid #CECECE; 
+}
+.food_dish_type_detail{
+width:200px;
+height:120px;
+clear:both; overflow:hidden;
+padding-top:10px;
+
+}
+.food_dish_type_detail img{
+
+clear:both; 
+overflow:hidden; 
+width:60px;
+height:35px;
+
+}
+.food_dish_detail p{
+line-height:10px;
+}
+.food_dish_detail a{
+font-size: 12px;
+display: inline-block; 
+width: 60px; height: 25px; 
+border:1px solid #CECECE; background-color:#25963F;
+border-radius:4px; color: #fff; 
+line-height: 25px; text-align: center;
+border: none; outline: none;  
+position:absolute; right:0px; top:3px;}
+.adddish{
+background-color:#7C7D75;
+color:#FFFFFF;
+font-size:16px;
+text-align:center;
+line-height:200px;
+border-radius:4px;
+}
+.optionDeldiv{
+position:absolute; right:0px; top:0px;
+ background-image:url(../img/del.png);
+ width:18px; height:21px;
+ margin-right:7px;}
+.modifidishtype_p{
+line-height:3px;
+}
+.uploaddiv{
+border-radius:0px;
+padding-left:5px;
+border:1px solid #CECECE;
+padding-top:2px;
+}
+.blueLable{
+background-color:#46BF1E;
+color:#FFFFFF;
+border-radius:4px;
+padding-left:5px;
+padding-right:5px;
+font-size:12px;
+border:1px solid #46BF1E;
+}
+.blueLable img{
+width:10px; height:10px;}
+.grayLable{
+background-color: #B0B0B0;
+color:#FFFFFF;
+border-radius:4px;
+padding-left:5px;
+padding-right:5px;
+font-size:12px;
+border:1px solid #B0B0B0;
+}
+.grayLable img{
+width:10px; height:10px;
+}
+.addLable{
+background-color: #B0B0B0;
+color:#FFFFFF;
+border-radius:4px;
+padding-left:15px;
+padding-right:15px;
+border:1px solid #B0B0B0;
+}
+.addLable img{
+width:10px; height:10px;
+}
+.dishDetail{
+margin-top:10px; width:700px;padding-left:10px; padding-right:10px;
+padding-bottom:10px;
+}
+.cookingYellowLable{
+border-radius:4px;
+padding-left:5px;
+padding-right:5px;
+display:inline-block;
+font-size:12px;
+background-color:#F07800;
+color:#FFFFFF;
+border:1px solid #F07800;
+}
+.cookingYellowLable img{
+width:15px;
+height:15px;
+}
+.cookingGreyLable{
+border-radius:4px;
+padding-left:5px;
+padding-right:5px;
+display:inline-block;
+font-size:12px;
+background-color: #8A8A8A;
+color:#FFFFFF;
+border:1px solid #8A8A8A;
+}
+.cookingGreyLable img{
+width:15px;
+height:15px;
+
+}
+
+/*标签*/
+.tags-box { clear: both; margin: 5px 0; }
+.tags-box a { display: inline-block; background: #B0B0B0; color: #FFFFFF; border-radius: 4px; padding: 2px 8px; font-size: 12px; height: 21px; line-height: 21px; vertical-align: middle }
+.tags-box .add { background:#E6E7E8 url(../img/tags_add.png) 50% 50% no-repeat; width: 50px; }
+.tags-box a i { display: inline-block; background: url(../img/tags_close.png) 100% 50% no-repeat; width: 10px; height: 10px; vertical-align: -1px; padding-left: 5px; font-size: 0; }
+.tags-box .on { background-color: #46BF1E; }
+.tags-box2 { clear: both; margin: 5px 0; }
+.tags-box2 a { display: inline-block; background: #B0B0B0; color: #FFFFFF; border-radius: 4px; padding: 4px 8px; font-size: 12px; height: 17px; line-height: 17px; vertical-align: middle; position:relative; overflow:hidden; zoom:1;}
+.tags-box2 a:hover{ color:#FFFFFF}
+.tags-box2 em { display: inline-block; border-right: 1px solid #FFF; padding-right: 5px; }
+.tags-box2 span { display: inline-block; margin: 0 5px;}
+.tags-box2 .add { background:#E6E7E8 url(../img/tags_add.png) 50% 50% no-repeat; width: 50px; }
+.tags-box2 .edit,.tags-box2 .del { background:#E6E7E8 url(../img/tags_edit.png) 50% 50% no-repeat; width: 35px; height: 25px; margin:-4px -8px -4px 0; vertical-align:top; display:none;}
+.tags-box2 .del{ background-image:url(../img/tags_del.png); border-radius:0 4px 4px 0; }
+.tags-box2 a:hover .edit,.tags-box2 a:hover .del{ display:inline-block; zoom:1;}
+.tags-box2 .on { background-color: #EE5F18; }
+
+
